@@ -2,11 +2,12 @@ name: Deploy Website
 on: [push]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deploying to surge
+  build:
+    runs-on: ubuntu-latest   
     steps:
+      - name: line 7 to surge
       - uses: actions/checkout@v2
+
       - name: Install Node.js
         uses: actions/setup-node@v2-beta
         with:
