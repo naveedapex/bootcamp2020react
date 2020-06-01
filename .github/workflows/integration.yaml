@@ -4,8 +4,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest   
-    steps:
-      - name: line 7 to surge
+    steps:     
       - uses: actions/checkout@v2
 
       - name: Install Node.js
