@@ -1,9 +1,8 @@
 name: Deploy Website
-
 on: [push]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
